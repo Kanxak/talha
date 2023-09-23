@@ -24,7 +24,7 @@ const About = () => {
   initial='hidden'
   whileInView={'show'}
   viewport={{ once: false, amount: 0.3 }}
-  className='flex-1 bg-about bg-contain bg-no-repeat h-[600px] mix-blend bg-top'>
+  className='flex-1 bg-about bg-contain bg-no-repeat h-[570px] mix-blend bg-top'>
   </motion.div>
 
     {/* text */}
@@ -46,7 +46,7 @@ const About = () => {
           <div className='text-[40px] font-tertiary text-gradient mb-2
           '>
            {
-            InView ? <CountUp start={0} end={3} duration={3} /> : null}
+            InView ? <CountUp start={0} end={3} duration={5} /> : null}
           </div>
           <div className='font-primary text-sm tracking-[2px]'>
             Years of <br />
@@ -57,7 +57,7 @@ const About = () => {
           <div className='text-[40px] font-tertiary text-gradient mb-2
           '>
            {
-            InView ? <CountUp start={0} end={12} duration={3} /> : null}
+            InView ? <CountUp start={0} end={12} duration={4} /> : null}
             {/*add k+ here if needed*/}
           </div>
           <div className='font-primary text-sm tracking-[2px]'>
@@ -69,7 +69,7 @@ const About = () => {
           <div className='text-[40px] font-tertiary text-gradient mb-2
           '>
            {
-            InView ? <CountUp start={0} end={3} duration={3} /> : null}
+            InView ? <CountUp start={0} end={3} duration={5} /> : null}
           </div>
           <div className='font-primary text-sm tracking-[2px]'>
             Self <br />
