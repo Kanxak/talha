@@ -2,7 +2,7 @@ import React from 'react';
 //images
 import Image from '../assets/avatar.svg';
 //icons
-import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaFacebook, FaDiscord, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 // type animation
 import {TypeAnimation} from 'react-type-animation';
 // motion
@@ -21,7 +21,7 @@ const Banner = () => {
             variants={fadeIn('up', 0.3)} 
             initial='hidden' 
             whileInView={'show'}
-            viewport={{ once: false, amoount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }}
             className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
               TALHA <span>AHMED</span>
             </motion.h1>
@@ -29,9 +29,9 @@ const Banner = () => {
             variants={fadeIn('up', 0.4)} 
             initial='hidden' 
             whileInView={'show'}
-            viewport={{ once: false, amoount: 0.7 }}
-            className='mb- text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-black mr-4'>I am a </span>
+            viewport={{ once: false, amount: 0.7 }}
+            className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
+              <span className='text-black mr-4'>I am a</span>
               <TypeAnimation 
               sequence={[
                 '3D Animator',
@@ -39,6 +39,8 @@ const Banner = () => {
                 'Graphic designer',
                 2000,
                 'Videographer',
+                2000,
+                'Video editor',
                 2000,
               ]}
               speed={50}
@@ -51,17 +53,19 @@ const Banner = () => {
             variants={fadeIn('up', 0.5)} 
             initial='hidden' 
             whileInView={'show'}
-            viewport={{ once: false, amoount: 0.7 }} 
+            viewport={{ once: false, amount: 0.7 }} 
             className='mb-8 max-w-lg mx-auto lg:mx-0'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, tempore maiores.
+              Welcome to my Portfolio, 
             </motion.p>
             <motion.div            
             variants={fadeIn('up', 0.6)} 
             initial='hidden' 
             whileInView={'show'}
-            viewport={{ once: false, amoount: 0.7 }} 
+            viewport={{ once: false, amount: 0.7 }} 
             className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>Contact me</button>
+              <a href='your-link-url-here'>
+                <button className='btn btn-lg'>Contact me</button>
+                </a>
               <a href="#" className='text-gradient btn-link'>
                 My Portfolio
                 </a>
@@ -71,7 +75,7 @@ const Banner = () => {
             variants={fadeIn('up', 0.7)} 
             initial='hidden' 
             whileInView={'show'}
-            viewport={{ once: false, amoount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }}
             className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <a href="#">
                   <FaYoutube />
@@ -80,7 +84,19 @@ const Banner = () => {
                   <FaGithub />
                 </a>
                 <a href="#">
-                  <FaDribbble />
+                  <FaFacebook />
+                </a>
+                <a href="#">
+                  <FaDiscord />
+                </a>
+                <a href="#">
+                  <FaInstagram />
+                </a>
+                <a href="#">
+                  <FaTwitter />
+                </a>
+                <a href="#">
+                  <FaWhatsapp />
                 </a>
               </motion.div>
             </div>
